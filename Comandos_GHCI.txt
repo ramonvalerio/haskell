@@ -1,0 +1,3 @@
+Limpar tela do console:
+Ctrl + L
+
