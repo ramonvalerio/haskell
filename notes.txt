@@ -1,0 +1,44 @@
+Haskell:
+
+1 - Características da linguagem(Funcional, Declarativa, Fortemente Tipada, Lazy)
+2 - replaceAll lista old new = map (\x -> if x == old then new else x ) lista
+3 - "let" serve para criar um escopo local, bom para dar semântica ao código
+4 - "in" serve para usar as funções declaradas no let.
+5 - map (serve para iterar uma lista e retorna a mesma com a função aplicada)
+6 - foldl (serve para acumular elementos de uma lista usando uma função)
+7 - filter ( serve para filtrar os elementos de uma lista e retorna a mesma filtrada)
+8 - iterate ( serve para gerar valores apartir de um valor passado por parametro)
+9 - take (limita o retorno de uma lista) 
+10 - takeWhile (
+
+Exemplos de combinação de "take" com "iterate":
+take 3 $ iterate (\x -> x * 2) 1
+[1, 2, 4]
+
+takeWhile (\x -> x < 20) $ iterate (\x -> x * 2) 1
+[1, 2, 4, 8, 16]
+
+11 - Linguagem Específica de Domínio:
+É uma linguagem que você cria para resolver um problema de maneira semântica.
+
+12- Type ( define sinônimos para criar semântica)
+13 - Data ( Cria novos termos para a liguagem)
+Ex.: data Booleano = Verdadeiro | Falso deriving (Show, Eq)]
+data Pessoa = Pessoa { nome:: String, idade :: Inteiro } deriving (Show, Eq)
+data Contagem = Primeiro | Segundo | Terceiro deriving (Show, Eq, Ord)
+
+14 - deriving( estende tipos pais)
+Ex.: 
+
+Ex.: Implementar uma função Lenght
+lenght lista = foldl (\acum atual -> acum + 1) 0 lista
+
+15 - Maybe (É um valor ou nada)
+16 - zip (É uma função que agrupa os elementos de duas listas em uma lista de tuplas)
+
+
+
+
+
+
+
